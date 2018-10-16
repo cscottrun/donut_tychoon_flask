@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Welcome to {{ shop.shop_name }}! Have a donut!</h1>
+    {% for donut in donuts %}
+    <div><p>
+      {{ donut.donut_name}} will cost ya ${{ donut.price}}
+    </p></div>
+    {% endfor %}
+
+{% endblock %}
+  
