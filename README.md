@@ -1,7 +1,7 @@
 # donut_tychoon_flask
 Had 2 days to learn Python/Flask. This is my first full-stack CRUD app with these new tools. 
 
-##Requirements
+## Requirements
 * Run server
 * Create templates to render views
 * Create database
