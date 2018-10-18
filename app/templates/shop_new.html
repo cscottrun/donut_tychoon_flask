@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Add New Shop</h1>
+<form action="/shops/add" method="POST" >
+
+  <label for="name">Shop Name</label>
+  <input type="text" name='shop_name'>
+  <label for="city">City</label>
+  <input type="text" name='shop_city'>
+  <input type="submit" value="update">
+  
+</form>
+{% endblock %}

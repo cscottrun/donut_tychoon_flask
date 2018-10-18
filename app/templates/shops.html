@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Carrie is a Donut tychoon. </h1>
+<h2>Here are all her shops:</h2>
+<ul>
+  {% for shop in shops %}
+  <li>
+  <a href="/shops/{{shop.id}}">{{ shop.name }}, {{ shop.city }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<button><a href="/shops/new">Add new shop</a></button>
+    
+
+{% endblock %}

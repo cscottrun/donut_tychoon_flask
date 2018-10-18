@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Are you sure you want to delete {{shop.name}}?</h1>
+<form action="./confirm" method="POST" >
+
+  <input type="hidden" value='{{shop.id}}' name='shop_id'>
+  
+  <input type="submit" value="confirm">
+  
+</form>
+{% endblock %}

@@ -7,3 +7,8 @@ class LoginForm(FlaskForm):
   password = PasswordField('Password', validators=[DataRequired()])
   remember_me = BooleanField('Remember Me')
   submit = SubmitField('Sign In')
+
+class ShopEdit(FlaskForm):
+  name = StringField('Shop Name')
+  city = StringField('City')
+  submit = SubmitField('Confirm')

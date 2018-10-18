@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{shop.shop_name}}, {{shop.shop_city}}</h1>
+<button><a href="/shops/edit/{{shop.id}}">Edit</a></button>
+<button><a href="/shops/delete/{{shop.id}}">Delete</a></button>
+
+<h2>Donuts Offered</h2>
+<ul>
+  <li>
+      {{ shop.donut }}
+  </li>
+</ul>
+
+<h2>Employees</h2>
+<ul>
+  <li>
+    {{shop.employee.first_name}} {{shop.employee.last_name}}
+  </li>
+</ul>
+
+
+
+
+    
+
+{% endblock %}
