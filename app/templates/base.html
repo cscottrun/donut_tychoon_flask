@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../static/base.css">
     {% if title %}
     <title>{{ title }} - Tychoon</title>
     {% else %}
@@ -7,12 +8,12 @@
     {% endif %}
   </head>
   <body>
-    <div>Donut Tychoon: 
+    <div class='main_nav'>
       <a href="{{ url_for('index') }}">Home</a>
       <a href="{{ url_for('login') }}">Login</a>
       <a href="{{ url_for('shops') }}">Shops</a>
     </div>
-    <hr>
+    
     {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>
