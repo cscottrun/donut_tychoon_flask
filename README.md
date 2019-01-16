@@ -1,5 +1,8 @@
 # donut_tychoon_flask
-Had 2 days to learn Python/Flask. This is my first full-stack CRUD app with these new tools. 
+After 2 days to learn Python and Flask, I built my first full-stack CRUD app with these new tools!
+
+## To start this app
+
 
 ## Requirements
 * Run server
